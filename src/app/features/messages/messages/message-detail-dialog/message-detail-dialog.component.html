@@ -1,0 +1,41 @@
+<mat-card class="dialog-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>
+        <mat-icon color="primary" class="dialog-icon">mail</mat-icon>
+        Message Details
+      </mat-card-title>
+    </mat-card-header>
+  
+    <mat-card-content>
+  
+      <div class="field">
+        <mat-icon>badge</mat-icon>
+        <strong>ID:</strong>
+        <span>{{ data.id }}</span>
+      </div>
+  
+      <div class="field">
+        <mat-icon>subject</mat-icon>
+        <strong>Content:</strong>
+        <span>{{ data.content }}</span>
+      </div>
+  
+      <div class="field">
+        <mat-icon>source</mat-icon>
+        <strong>Source Queue:</strong>
+        <span>{{ data.sourceQueue }}</span>
+      </div>
+  
+      <div class="field">
+        <mat-icon>access_time</mat-icon>
+        <strong>Received At:</strong>
+        <span>{{ data.receivedAt | date:'short' }}</span>
+      </div>
+  
+    </mat-card-content>
+  
+    <mat-card-actions class="actions">
+      <button mat-stroked-button color="primary" (click)="close()">Close</button>
+    </mat-card-actions>
+  </mat-card>
+  

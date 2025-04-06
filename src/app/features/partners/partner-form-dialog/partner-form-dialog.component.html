@@ -1,0 +1,49 @@
+<h2 mat-dialog-title>Add Partner</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()" mat-dialog-content class="compact-form">
+  <div class="row">
+    <mat-form-field appearance="fill" class="half">
+      <mat-label>Alias</mat-label>
+      <input matInput formControlName="alias" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="half">
+      <mat-label>Type</mat-label>
+      <input matInput formControlName="type" required />
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-form-field appearance="fill" class="half">
+      <mat-label>Application</mat-label>
+      <input matInput formControlName="application" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="half">
+      <mat-label>Processed Flow Type</mat-label>
+      <mat-select formControlName="processedFlowType" required>
+        <mat-option value="MESSAGE">Message</mat-option>
+        <mat-option value="ALERTING">Alerting</mat-option>
+        <mat-option value="NOTIFICATION">Notification</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-label class="label">Direction</mat-label>
+    <mat-radio-group formControlName="direction" class="radio-row">
+      <mat-radio-button value="INBOUND">Inbound</mat-radio-button>
+      <mat-radio-button value="OUTBOUND">Outbound</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <mat-form-field appearance="fill" class="full">
+    <mat-label>Description</mat-label>
+    <textarea matInput formControlName="description" rows="2" required></textarea>
+  </mat-form-field>
+</form>
+
+<mat-dialog-actions align="end" class="actions">
+  <button mat-stroked-button (click)="cancel()">Cancel</button>
+  <button mat-flat-button color="primary" type="submit" [disabled]="form.invalid">Add</button>
+</mat-dialog-actions>
