@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'mq-ibm-messages' title`, () => {
+  it(`should have the 'mq-msg-ui title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-  //  expect(app.title).toEqual('mq-ibm-messages');
+  //  expect(app.title).toEqual('mq-msg-ui');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, mq-ibm-messages');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, mq-msg-ui');
   });
 });

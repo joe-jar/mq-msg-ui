@@ -64,7 +64,7 @@ export class PartnersComponent implements OnInit {
         this.partnerService.create(result).subscribe({
           next: (created) => {
             this.partners = [...this.partners, created];
-            this.snackBar.open('✅ Partner added successfully!', 'Close', { duration: 3000 });
+            this.snackBar.open('Partner added successfully!', 'Close', { duration: 3000 });
           },
           error: () => this.snackBar.open('Failed to add partner.', 'Close', { duration: 3000 })
         });
