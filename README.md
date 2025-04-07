@@ -20,7 +20,7 @@ Une application Angular 17 permettant de visualiser les messages techniques issu
   
   ###  Sans Docker (pour le développement local)
   
-  - **Node.js** & **npm** : Requis pour installer les dépendances et exécuter l’application via Angular CLI en mode développement.
+  - **Node.js** & **npm** && **Angular CLI**" : Requis pour installer les dépendances et exécuter l’application via Angular CLI en mode développement.
 
 
 ## Structure de l'application
