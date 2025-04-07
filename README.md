@@ -12,17 +12,15 @@ Une application Angular 17 permettant de visualiser les messages techniques issu
 
 ## Prérequis
 
-## Prérequis
-
-Deux modes d’utilisation sont possibles selon vos besoins :
-
-###  Avec Docker (recommandé)
-
-- **Docker** : Permet de construire et exécuter l’application sans installer Angular localement. Idéal pour un déploiement rapide dans un environnement isolé.
-
-###  Sans Docker (pour le développement local)
-
-- **Node.js** & **npm** : Requis pour installer les dépendances et exécuter l’application via Angular CLI en mode développement.
+  Deux modes d’utilisation sont possibles selon vos besoins :
+  
+  ###  Avec Docker (recommandé)
+  
+  - **Docker** : Permet de construire et exécuter l’application sans installer Angular localement. Idéal pour un déploiement rapide dans un environnement isolé.
+  
+  ###  Sans Docker (pour le développement local)
+  
+  - **Node.js** & **npm** : Requis pour installer les dépendances et exécuter l’application via Angular CLI en mode développement.
 
 
 ## Structure de l'application
